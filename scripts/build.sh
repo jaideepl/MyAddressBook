@@ -57,5 +57,5 @@ fi
 cp app/build/outputs/apk/$buildType/$apkFileName artifacts/
 
 cat << "EOF"
-             
+
 EOF
