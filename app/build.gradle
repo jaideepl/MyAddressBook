@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 27
     buildToolsVersion '27.0.3'
     defaultConfig {
         applicationId "com.mab"
@@ -40,7 +40,7 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:27.1.1'
     compile 'com.github.enricocid:cpl:1.0.3'
     compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
-    compile 'com.android.support:design:26.1.0'
+    compile 'com.android.support:design:27.1.1'
     compile 'com.github.lzyzsd.randomcolor:library:1.0.0'
     compile 'com.dynamitechetan.flowinggradient:flowinggradient:1.1'
     compile 'com.codemybrainsout.rating:ratingdialog:1.0.8'
