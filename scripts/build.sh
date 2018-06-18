@@ -6,6 +6,8 @@ buildType=$2
 storePass=$3
 keyAlias=$4
 keyPass=$5
+versionCode=$6
+versionName=$7
 
 # helper method
 setProperty() {
@@ -17,6 +19,9 @@ setProperty() {
 # -----------------------------------------------------------------
 propertiesFile='gradle.properties'
 chmod +x ${propertiesFile}
+
+(setProperty "VERSION_CODE" "$versionCode")
+(setProperty "VERSION_NAME" "$versionName")
 
 # update key properties based on build type
 if [ $buildType = 'debug' ]; then
