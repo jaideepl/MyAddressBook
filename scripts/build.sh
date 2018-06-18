@@ -6,8 +6,8 @@ buildType=$2
 storePass=$3
 keyAlias=$4
 keyPass=$5
-versionCode=$6
-versionName=$7
+versionName=$6
+versionCode=$7
 
 # helper method
 setProperty() {
