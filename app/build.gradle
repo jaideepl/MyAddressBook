@@ -5,12 +5,13 @@ android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
     defaultConfig {
+        def env = System.getenv()
 
         applicationId "com.mab"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode VERSION_CODE.toInteger()
-        versionName VERSION_NAME
+        versionCode env['VERSION_CODE']
+        versionName env['VERSION_NAME']
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
     }
