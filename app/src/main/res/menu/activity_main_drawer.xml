@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/addresses"
+            android:icon="@drawable/ic_address"
+            android:title="Places" />
+
+        <item
+            android:id="@+id/groups"
+            android:icon="@drawable/ic_group"
+            android:title="Manage Groups" />
+
+        <item
+            android:id="@+id/backup"
+            android:icon="@drawable/ic_backup"
+            android:title="Backup" />
+
+        <item
+            android:id="@+id/restore"
+            android:icon="@drawable/ic_restore"
+            android:title="Restore" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/ratetheapp"
+                android:icon="@drawable/ic_rating"
+                android:title="Rate the App..." />
+            <item
+                android:id="@+id/feedback"
+                android:icon="@drawable/ic_feedback"
+                android:title="Feedback..." />
+            <item
+                android:id="@+id/promoteapp"
+                android:icon="@drawable/ic_forward"
+                android:title="Promote the App" />
+            <item
+                android:id="@+id/privacypolicy"
+                android:icon="@drawable/ic_privacy"
+                android:title="Privacy Policy" />
+            <item
+                android:id="@+id/moreapps"
+                android:icon="@drawable/ic_playstore"
+                android:title="More Apps" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/versionname"
+        android:title="Version 1.0"></item>
+
+</menu>
