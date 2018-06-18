@@ -21,6 +21,10 @@ android {
     aaptOptions {
         cruncherEnabled = false
     }
+
+    lintOptions {
+        abortOnError false
+    }
 }
 
 dependencies {
