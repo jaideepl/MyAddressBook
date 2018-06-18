@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.lzyzsd.randomcolor:library-1.0.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-1.0.0.aar/f85575952300f5d2300e80b5caf40c53/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-1.0.0.aar/f85575952300f5d2300e80b5caf40c53/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.lzyzsd.randomcolor/library/1.0.0/132f4e50a618fa8f8fba642872810cf002464493/library-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

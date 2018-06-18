@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.rom4ek:arcnavigationview-1.0.2">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/arcnavigationview-1.0.2.aar/0d04c92af213f1be039668d383d8f551/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/arcnavigationview-1.0.2.aar/0d04c92af213f1be039668d383d8f551/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.rom4ek/arcnavigationview/1.0.2/f5fba8a589ca3d47519d77b867aea5dcc5b58664/arcnavigationview-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

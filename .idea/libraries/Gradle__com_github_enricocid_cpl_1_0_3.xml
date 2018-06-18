@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.enricocid:cpl-1.0.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/cpl-1.0.3.aar/5bc254392fe287f0a151c21886a2a815/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/cpl-1.0.3.aar/5bc254392fe287f0a151c21886a2a815/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.enricocid/cpl/1.0.3/2e6e87e4df23cce64dcb8c0c048a4bfeb3e520a7/cpl-1.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
