@@ -37,24 +37,24 @@ chmod +x gradlew
 
 # build
 if [ $buildType = 'debug' ]; then
-	./gradlew assembleDebug --stacktrace
+	./gradlew :app:bundleDebug --stacktrace
 elif [ $buildType = 'release' ]; then
-	./gradlew assembleRelease --stacktrace
+	./gradlew :app:bundleRelease --stacktrace
 fi
 
 # -----------------------------------------------------------------
 # -------------------------- POST BUILD ---------------------------
 # -----------------------------------------------------------------
-apkFileName="app-$buildType.apk"
+bundleFileName="bundle.aab"
 rm -r artifacts/
 mkdir artifacts
 
-# copy apk to artifacts
-if [ ! -e "app/build/outputs/apk/$buildType/$apkFileName" ]; then
-    echo "ERROR: File not exists: (app/build/outputs/apk/$buildType/$apkFileName)"
+# copy bundle to artifacts
+if [ ! -e "app/build/outputs/bundle/$buildType/$bundleFileName" ]; then
+    echo "ERROR: File not exists: (app/build/outputs/bundle/$buildType/$bundleFileName)"
     exit 1
 fi
-cp app/build/outputs/apk/$buildType/$apkFileName artifacts/
+cp app/build/outputs/bundle/$buildType/$bundleFileName artifacts/
 
 cat << "EOF"
 
