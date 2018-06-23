@@ -55,6 +55,7 @@ if [ ! -e "app/build/outputs/bundle/$buildType/$bundleFileName" ]; then
     exit 1
 fi
 cp app/build/outputs/bundle/$buildType/$bundleFileName artifacts/
+mv artifacts/{*.aab,app-$buildType.apk}
 
 cat << "EOF"
 
