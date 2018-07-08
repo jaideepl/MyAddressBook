@@ -106,6 +106,7 @@ android {
 }
 
 play {
+    defaultToAppBundles = true
     jsonFile = file('../api_key.json')
     track = 'internal'
 }
