@@ -14,6 +14,36 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
     }
+
+//    signingConfigs {
+//        release {
+//            storeFile file("../release.keystore")
+//            storePassword "pulsar@1"
+//            keyAlias "myaddressbook"
+//            keyPassword "pulsar@1"
+//        }
+//    }
+
+    signingConfigs {
+        config
+    }
+
+    // set the keystore if we set the path
+    if (KEYSTORE != "") {
+
+        // initialize the signing
+        android.signingConfigs.config.storeFile = file('../' + KEYSTORE)
+        android.signingConfigs.config.storePassword = STORE_PASSWORD
+        android.signingConfigs.config.keyAlias = KEY_ALIAS
+        android.signingConfigs.config.keyPassword = KEY_PASSWORD
+
+        // set this signing for both build types
+        android.buildTypes.release.signingConfig = android.signingConfigs.config
+        android.buildTypes.debug.signingConfig = android.signingConfigs.config
+
+    }
+
+
     buildTypes {
         release {
             minifyEnabled true
@@ -25,6 +55,7 @@ android {
             renderscriptDebuggable false
             pseudoLocalesEnabled false
 
+//            signingConfig signingConfigs.release
         }
 
         debug {
@@ -42,9 +73,8 @@ android {
         abortOnError false
     }
 
-    signingConfigs {
-        config
-    }
+
+
 
     dexOptions {
         javaMaxHeapSize "4g"
@@ -59,20 +89,6 @@ android {
         exclude 'LICENSE.txt'
     }
 
-    // set the keystore if we set the path
-    if (KEYSTORE != "") {
-
-        // initialize the signing
-        android.signingConfigs.config.storeFile = file('../' + KEYSTORE)
-        android.signingConfigs.config.storePassword = STORE_PASSWORD
-        android.signingConfigs.config.keyAlias = KEY_ALIAS
-        android.signingConfigs.config.keyPassword = KEY_PASSWORD
-
-        // set this signing for both build types
-        android.buildTypes.release.signingConfig = android.signingConfigs.config
-        android.buildTypes.debug.signingConfig = android.signingConfigs.config
-
-    }
 
     bundle {
         language {
@@ -94,7 +110,7 @@ android {
 }
 
 play {
-    jsonFile = file('api_key.json')
+    jsonFile = file('../api_key.json')
     track = 'internal'
 }
 
