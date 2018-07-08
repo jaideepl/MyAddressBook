@@ -55,7 +55,7 @@ android {
             renderscriptDebuggable false
             pseudoLocalesEnabled false
 
-//            signingConfig signingConfigs.release
+            signingConfig android.buildTypes.release.signingConfig
         }
 
         debug {
