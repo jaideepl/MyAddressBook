@@ -7,10 +7,8 @@ buildscript {
 
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.0-alpha17'
-
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
+        classpath 'com.android.tools.build:gradle:3.2.0-beta01'
+        classpath 'com.github.triplet.gradle:play-publisher:1.2.2'
     }
 }
 
@@ -31,7 +29,7 @@ ext {
     targetSdkVersion = 27
     compileSdkVersion = 27
     buildToolsVersion = '27.0.3'
-    versionCode=16
+    versionCode=17
     versionName="1.6"
 
 }
