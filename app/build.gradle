@@ -29,7 +29,7 @@ android {
     }
 
     // initialize the signing
-    android.signingConfigs.config.storeFile = file('../' + KEYSTORE)
+    android.signingConfigs.config.storeFile = file('../release.keystore')
     android.signingConfigs.config.storePassword = STORE_PASSWORD
     android.signingConfigs.config.keyAlias = KEY_ALIAS
     android.signingConfigs.config.keyPassword = KEY_PASSWORD
