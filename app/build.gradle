@@ -15,29 +15,28 @@ android {
         multiDexEnabled true
     }
 
-//    signingConfigs {
-//        release {
-//            storeFile file('../release.keystore')
-//            storePassword "pulsar@1"
-//            keyAlias "myaddressbook"
-//            keyPassword "pulsar@1"
-//        }
-//    }
-
     signingConfigs {
-        config
+        release {
+            storeFile file('../release.keystore')
+            storePassword "pulsar@1"
+            keyAlias "myaddressbook"
+            keyPassword "pulsar@1"
+        }
     }
 
-    // initialize the signing
-    android.signingConfigs.config.storeFile = file('../release.keystore')
-    android.signingConfigs.config.storePassword = 'pulsar@1'
-    android.signingConfigs.config.keyAlias = 'myaddressbook'
-    android.signingConfigs.config.keyPassword = 'pulsar@1'
-
-    // set this signing for both build types
-    android.buildTypes.release.signingConfig = android.signingConfigs.config
-    android.buildTypes.debug.signingConfig = android.signingConfigs.config
-
+//    signingConfigs {
+//        config
+//    }
+//
+//    // initialize the signing
+//    android.signingConfigs.config.storeFile = file('../release.keystore')
+//    android.signingConfigs.config.storePassword = 'pulsar@1'
+//    android.signingConfigs.config.keyAlias = 'myaddressbook'
+//    android.signingConfigs.config.keyPassword = 'pulsar@1'
+//
+//    // set this signing for both build types
+//    android.buildTypes.release.signingConfig = android.signingConfigs.config
+//    android.buildTypes.debug.signingConfig = android.signingConfigs.config
 
 
     buildTypes {
@@ -51,7 +50,8 @@ android {
             renderscriptDebuggable false
             pseudoLocalesEnabled false
 
-            signingConfig android.buildTypes.release.signingConfig
+//            signingConfig android.buildTypes.release.signingConfig
+            signingConfig signingConfigs.release
         }
 
         debug {
@@ -106,10 +106,10 @@ android {
 }
 
 play {
-    defaultToAppBundles = true
     jsonFile = file('../api_key.json')
     track = 'internal'
 }
+
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
