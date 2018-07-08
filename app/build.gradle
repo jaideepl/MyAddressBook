@@ -28,16 +28,16 @@ android {
         config
     }
 
-    // set the keystore if we set the path
     // initialize the signing
-    android.signingConfigs.config.storeFile = file('../release.keystore')
-    android.signingConfigs.config.storePassword = 'pulsar@1'
-    android.signingConfigs.config.keyAlias = 'myaddressbook'
-    android.signingConfigs.config.keyPassword = 'pulsar@1'
+    android.signingConfigs.config.storeFile = file('../' + KEYSTORE)
+    android.signingConfigs.config.storePassword = STORE_PASSWORD
+    android.signingConfigs.config.keyAlias = KEY_ALIAS
+    android.signingConfigs.config.keyPassword = KEY_PASSWORD
 
     // set this signing for both build types
     android.buildTypes.release.signingConfig = android.signingConfigs.config
     android.buildTypes.debug.signingConfig = android.signingConfigs.config
+
 
 
     buildTypes {
