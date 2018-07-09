@@ -1,0 +1,15 @@
+Places - Address Book is a simple Application to store and manage addresses of your favorite places and contacts.
+
+Highlights of the App:
+1. Save Addresses and link contacts to those Places.
+2. Navigate to the saved Addresses of Places.
+3. Assign a category like Friends, Family, Professional etc for the places/addresses.
+4. Complete address of the places you visit.
+5. Easy UI to select the location/address using GPS.
+6. Landmarks of the places/address.
+7. Quick action links of addresses to google map.
+8. Call, Message, Mail actions are available for the contacts linked to places/addresses
+9. Copy and share google map link of the Places/addresses
+9. Copy and share address.
+
+All these features available for FREE and NO ADS !!!
