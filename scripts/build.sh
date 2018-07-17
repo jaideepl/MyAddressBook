@@ -1,5 +1,6 @@
 #!/bin/bash
 
+gem install bundler
 chmod +x Gemfile.lock
 bundle install
 
