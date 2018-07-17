@@ -62,4 +62,6 @@ cp app/build/outputs/bundle/$buildType/$bundleFileName artifacts/
 
 cat << "EOF"
 
+fastlane playstore
+
 EOF
