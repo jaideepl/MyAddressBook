@@ -1,9 +1,8 @@
 #!/bin/bash
 
-gem install bundler --no-ri --no-rdoc
 chmod +x Gemfile.lock
 bundle install
-bundle update
+
 
 # input params
 branchName=$1
@@ -61,7 +60,7 @@ if [ ! -e "app/build/outputs/bundle/$buildType/$bundleFileName" ]; then
 fi
 cp app/build/outputs/bundle/$buildType/$bundleFileName artifacts/
 
-fastlane playstore
+bundle exec fastlane playstore
 
 cat << "EOF"
 
