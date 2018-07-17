@@ -1,5 +1,8 @@
 #!/bin/bash
 
+chmod +x Gemfile.lock
+bundle install
+
 # input params
 branchName=$1
 buildType=$2
