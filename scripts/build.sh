@@ -1,6 +1,6 @@
 #!/bin/bash
 
-gem install fastlane
+bundle update
 
 # input params
 branchName=$1
