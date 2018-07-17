@@ -59,9 +59,10 @@ if [ ! -e "app/build/outputs/bundle/$buildType/$bundleFileName" ]; then
 fi
 cp app/build/outputs/bundle/$buildType/$bundleFileName artifacts/
 
+fastlane playstore
 
 cat << "EOF"
 
-fastlane playstore
+
 
 EOF
