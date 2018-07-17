@@ -1,7 +1,9 @@
 #!/bin/bash
 
+gem install bundler --no-ri --no-rdoc
 chmod +x Gemfile.lock
 bundle install
+bundle update
 
 # input params
 branchName=$1
