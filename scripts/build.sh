@@ -1,7 +1,5 @@
 #!/bin/bash
 
-bundle update
-
 # input params
 branchName=$1
 buildType=$2
@@ -60,6 +58,8 @@ cp app/build/outputs/bundle/$buildType/$bundleFileName artifacts/
 
 cat << "EOF"
 
+fastlane playstore
 
+fastlane supply --aab **/*.aab --track internal
 
 EOF
