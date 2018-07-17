@@ -1,5 +1,7 @@
 #!/bin/bash
 
+gem install fastlane
+
 # input params
 branchName=$1
 buildType=$2
